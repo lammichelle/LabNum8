@@ -29,11 +29,13 @@ public class LabNum8 {
 			
 			//use switch statements 
 			switch (userInput) {
-			case "Hometown":
+			case "Hometown": //case sensitive
+			case "hometown":
 				System.out.println(hometowns[userNum -1]);
 				break;
 				//do stuff 
 			case "Favorite food":
+			case "favorite food":
 				System.out.println(favoriteFoods[userNum -1]);
 				break;
 				//do stuff

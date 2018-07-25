@@ -16,7 +16,7 @@ public class ArrayMethods {
 	////////////////////////////////////////////////////////////////////////////	
 		// create an array
 		int[] arr = { 6, 54, 3, 22, 1 };
-		// sort method
+		// sort method in assending numerical order
 		Arrays.sort(arr);
 		System.out.println(Arrays.toString(arr)); //turning it back to a string
 	////////////////////////////////////////////////////////////////////////	
@@ -24,7 +24,7 @@ public class ArrayMethods {
 		Arrays.fill(arr, 100);
 		System.out.println(Arrays.toString(arr)); //turning it back to a string
 		
-		//fills index btwn range ,last index is exclusive(-1)
+		//fills index btwn range with 202 ,last index is exclusive(-1)
 		Arrays.fill(arr, 1, 3, 202);
 		System.out.println(Arrays.toString(arr)); //turning it back to a string
 	////////////////////////////////////////////////////////////////////	
@@ -35,8 +35,9 @@ public class ArrayMethods {
 		
 	///////////////////////////////////////////////////////////////	
 		int[] arr4 = {3,4,5,6};
-		int[] arr5 = arr4 ; //DONT DO THIS, THIS IS BAD!
+		int[] arr5 = arr4 ; //DONT DO THIS, THIS IS BAD!!!
 		
+		//original 
 		System.out.println("Array 4: "+ Arrays.toString(arr4));
 		System.out.println("Array 5: "+ Arrays.toString(arr5));
 		arr5[2] =160;
@@ -46,6 +47,8 @@ public class ArrayMethods {
 		
 		System.out.println();
 		//to overcome reference pointer copy issues , use methods
+		//or change the length
+		//original
 		int [] arr6 = Arrays.copyOf(arr4, arr4.length);
 		System.out.println("Array 4: "+ Arrays.toString(arr4));
 		System.out.println("Array 6: "+ Arrays.toString(arr6));
